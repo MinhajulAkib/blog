@@ -1,8 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 .header-area {
-    
+  padding: 10px 0;
 }
 .container {
   width: 1000px;
@@ -22,10 +27,9 @@ body {
 }
 .menu {
   float: right;
-  margin-top: 20px;
 }
 .menu ul {
-  list-style: none;
+  list-style: outside none none;
   margin: 0;
   padding: 0;
 }
@@ -39,7 +43,60 @@ body {
   padding: 20px;
   display: block;
   text-decoration: none;
-  text-shadow: 5px;
 }
-li {
+.slider-area img {
+  width: 100%;
+}
+.text {
+  width: 50%;
+  float: left;
+}
+.content-area{
+  background: #f6f6f6 none repeat scroll 0 0;
+  padding: 70px 0;
+}
+.content-tr {
+  width: 50%;
+  float: right;
+}
+.content-tr ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.content-tr ul li {
+  border-bottom: 3px solid red;
+  margin-bottom: 10px;
+  margin-right: 25px;
+  padding-bottom: 10px;
+}
+.content-tr ul li:hover {
+  border-color: green;
+}
+.content-tr ul li a {
+  color: #666;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.content-tr ul li a:hover {
+  color: white;
+  padding-left: 15px;
+  background: red;
+}
+.content-tr ul li:last-child {
+  border-bottom: 0;
+}
+.img {
+  width: 33.33%;
+  float: left;
+  line-height: 0;
+}
+.img img{
+  width:100%
 }
